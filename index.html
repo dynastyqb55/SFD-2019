@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
     <script>
         $(document).ready(function(){
-            if($(window).height()<664){
+            if($(window).height()<664 || $(window).width()<1064){
             $('.about12').attr({href:"#1"});
         }
         else{
@@ -28,11 +28,22 @@
         }
             
         });
+	     
+	</script>
+	<script>
+        $(document).ready(function(){
+            if($(window).height()>664){
+            $('#events').css({paddingTop:"150px"});
+		    $('#speakers').css({paddingTop:"200px"});
+        }
+         
+        });
         
     </script>
+	
     <script>
         $(document).ready(function(){
-            if($(window).height()<664){
+            if($(window).height()<664 || $(window).width()<1064){
             $('.speak12').attr({href:"#speakersmobile"});
         }
         else{
@@ -96,19 +107,19 @@
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<div class="landingwrap"></div>
-			<div class="landingcontent">
-				
+			<div class="landingwrap"id=2></div>
+               <div class="landingcontent"style='background-image: url(images/WhatsApp%20Image%202019-07-10%20at%2010.44.55%20AM.jpeg);background-size: 800px;background-repeat: no-repeat;background-position: center'>
+								
 				<div class="fixedheaderwrapper" style="position: relative">
 					<div class="fixedheaders">
-						<div class="fixedheader"style="padding-top: 55px">
+						<div class="fixedheader"style="padding-top: 145px">
 							<div class="headers">Freedom.</div>
 							<div class="headers">Explore.</div>
 							<div class="headers">Community.</div>
 						</div>
 					</div>
 				</div>
-				<div class="About"id=2>
+				<div class="About"style='padding-top: 200px'>
 					<h1>Software Freedom Day</h1>
 					<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
 				</div>
@@ -132,7 +143,7 @@
 			<p>Software Freedom Day or SFD for short, is a global celebration of Free and Open Source Software (FOSS). It is conducted every year in the month of September in different countries. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.<br>This year is the 10th anniversary of Software Freedom Day in Panjab University, Chandigarh. Ever since its inception, SFD has grown in scale and participation at Panjab University. Our past speakers have been from a multitude of fields and various organizations like Mozilla, Facebook, Microsoft and Google, just to name a few. SFD aims to be an accessible and community-driven conference, and be open to developers and students of all levels.</p>
 		</div>
 	</section>
-	<section id="events"style='height:200px'>
+	<section id="events"style='height:200px;padding-top:5px'>
 		<h1 class="eventheading">Events</h1>
         <div class="eventswrapper" style='text-align:center;margin-top:95px;font-size:30px'>
         Coming Soon...</div>
@@ -241,11 +252,11 @@
 		</div>-->
         
 	</section>
-	<section id="speakers" class="desktop">
+	<section id="speakers" class="desktop"style='padding-top:40px'>
 		<div class="speakerinfo">
 			<div>
-				<h1 class="speakerheading selectedspeaker"><div>01 </div>Past Speakers</h1>
-				<h1 class="speakerheading"><div>02 </div>Past Keynote Speakers</h1>
+				<h1 class="speakerheading selectedspeaker">Past Speakers</h1>
+				
 			</div>
 		</div>
 		<div class="speakerpic">
@@ -562,7 +573,8 @@
 					<div class="row social">
 						 <a href='https://www.facebook.com//sfdpu/'><div class="col-4"><i class="fab fa-facebook"></i></div></a>
                         <a href='https://twitter.com/sfdpu'><div class="col-4"><i class="fab fa-twitter-square"></i></div></a>
-						<div class="col-4"><i class="fab fa-instagram"></i></div>
+			<a href='https://instagram.com/sfdpu?igshid=dr9rnu9gmif0'><div class="col-4"><i class="fab fa-instagram"></i></div></a>
+
 					</div>
 					<p><i class="fas fa-phone-square"></i>Ankur(+91-7081016235)</p>
 					<p><i class="fas fa-phone-square"></i>Samiksha(+91-9056608712)</p>
