@@ -22,20 +22,20 @@ body::-webkit-scrollbar-track {
 li.nav-item:nth-child(4){width: 20%; padding: 0}
 
 
-.landing{width: 100vw; padding: 0vh 5vw; position: relative; margin-top: 50px; }
+.landing{width: 100vw; padding: 0vh 5vw; position: relative; margin-top: 50px; background: url('../images/vid-background.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center}
 .landing .vidwrap{width: 70vw; display: flex; justify-content: center; align-items:center; margin: auto; padding: 0 20px;}
 .landing video{ width: 100%; height: auto; }
-.landingwrap{position: absolute; height: 100%; width: 100vw; background: rgba(0,0,0,0.7); top: 0; left: 0; overflow-x:hidden;}
+.landingwrap{position: absolute; height: 100%; width: 100vw; background: rgba(0,0,0,0.8); top: 0; left: 0; overflow-x:hidden;}
 .landingcontent{position: absolute; height: 100%; width: 100vw; top: 0; left: 0;}
-.fixedheaders{top:100px; width: 99%; margin: auto; height: 40vh; font-size: 3.5em; font-family: montserrat; font-weight: 700; color: rgb(255,255,255); perspecitve: 20px; -webkit-perspective: 20px; display: flex; justify-content: center; align-items: center; transform: translate(0,15%);}
+.fixedheaders{ width: 99%; margin: 0 auto; top: 42; height: 40vh; font-size: 3.5em; font-family: montserrat; font-weight: 700; color: rgb(255,255,255); perspecitve: 20px; -webkit-perspective: 20px; display: flex; justify-content: center; align-items: center; transform: translate(0,15%);}
 .fixedheader{ transform-style: preserve-3d; translation: 0.3s; -webkit-transform-style: preserve-3d; transform: scale(1.4); position: absolute; top: 0; transition: 0.3s;}
-.fixedheaders .headers{display: inline-block;}
-.register{color: white; position: absolute; top:70%; right: 0; padding: 0px; width: 35vw; font-size: 14px; font-family: montserrat;}
+.fixedheaders .headers{display: inline-block}
+.register{color: white; position: absolute; top:70%; right: 0; padding: 20px; width: 35vw; font-size: 14px; font-family: montserrat;}
 .register input{width: 70%; margin-right: 0; background: rgb(67,83,255); border: 0px solid white; font-family: montserrat; color: white; padding: 20px 20px}
 .register button{width: 15%; margin-left: 0; background: rgba(67,83,255,0.8); text-align: center; border: 0px solid white ; color: white; padding: 20px 15px}
 .register input::placeholder{ color: white}
-.register h2{margin-bottom: 20px}
-.Highlight{position: fixed; padding-top: 10px; top: 42px; left: 10px; z-index: 2; transition: color left 0.3s; color: rgba(255,255,255,0.3); height: 40vh; background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.7), rgba(0,0,0,0));}
+.register h2{margin-bottom: 10px}
+.Highlight{position: fixed; padding-top: 0px; top:42px; left: 10px; z-index: 2; transition: color left 0.3s; color: rgba(255,255,255,0.3); height: 40vh; background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.9), rgba(0,0,0,0.8), rgba(0,0,0,0.7), rgba(0,0,0,0));}
 .selected{color: rgba(255,255,255,1);}
 .shift1{ transform: scale(1.4) translate(-240px, 0); }
 .shift2{ transform: scale(1.4) translate(-500px, 0); }
@@ -70,12 +70,13 @@ table:nth-child(1) th{padding-top: 0;}
 .speakerpic .col-6{ margin: 20px 0; padding: 0 10px; overflow: hidden; margin-bottom: 0;}
 .speakerpic .speakerwrapper .image{width: 100%; height: 100%; display: flex; align-items: center; justify-content:center}
 .speakerpic .speakerwrapper img{width: auto; height: 100%}
+.speakerheading{font-family: poppins; font-weight: 700; text-align: center; transition: 0.3s; font-size: 2.5em; color: rgba(255,255,255,0.5); padding: 20px 0; }
+.selectedspeaker{color: rgba(255,255,255,1); font-size: 2.8em}
 .links{width: 100%; height: 100%; position: absolute; left: -100%; top: 0; background: rgba(255,255,255,0.9); color: #000; transition: 0.3s; display: flex; justify-content:center; align-items: center;}
 .links>div{width: 70%; text-align: center; font-family: quicksand}
 .col-6:hover .links{left:0; }
 #speakers .linkhr{background: rgb(0,0,0)}
 .speakerinfomoveup{top: 35vh;}
-
 
 .gallery-wrapper{height: 100%}
 .gallery-img-wrapper{overflow: hidden; margin: 0 10px; display: flex; align-items:center; justify-content:center;}
@@ -92,6 +93,15 @@ table:nth-child(1) th{padding-top: 0;}
 #contact .social{text-align: center; font-size: 2.2em; margin-bottom: 50px }
 .contact p{font-family: questrial; font-size: 20px}
 #contact p i{font-size: 1.5em; margin-right: 20px}
+#contact .col-4:nth-child(1) a{color: #4267b2;} 
+#contact .col-4:nth-child(1) a:hover{color: #4267b2;} 
+#contact .col-4:nth-child(1) a:visited{color: #4267b2;} 
+#contact .col-4:nth-child(2) a{color: #28aae1;} 
+#contact .col-4:nth-child(2) a:hover{color: #28aae1;} 
+#contact .col-4:nth-child(2) a:visited{color: #28aae1;} 
+#contact .col-4:nth-child(3) a{color: #d90059;} 
+#contact .col-4:nth-child(3) a:hover{color: #d90059;} 
+#contact .col-4:nth-child(3) a:visited{color: #d90059;} 
 
 
 
@@ -110,13 +120,11 @@ table:nth-child(1) th{padding-top: 0;}
     .updates .new{margin-right: 10px}
     .updates .update{color:rgb(96,109,255); margin-left: 0px}
     .About{color: white; position: absolute; top: 70%; padding-left: 50px; width: 60vw; font-size: 15px; font-family: montserrat; line-height: 22px}
-    .About h1{margin-bottom: 17px;}
+    .About h1{margin-bottom: 17px; font-family: questrial}
     .About p{color: rgba(255,255,255,0.8); font-size: 1.1em}
-    .eventheading{font-family: poppins; padding: 0px 6vw; margin-top: 250px; color: #FFF; font-size: 2em}
-    .eventswrapper{height: 60vh; font-family: montserrat; color: #FFF; width: 95vw; padding: 0 4vw; margin: auto; overflow-y: scroll}
+    .eventheading{font-family: poppins; padding: 0px 6vw; margin-top: 350px; color: #FFF; font-size: 2em}
+    .eventswrapper{/*height: 60vh;*/ font-family: montserrat; color: #FFF; width: 95vw; padding: 0 4vw; margin: auto; overflow-y: scroll}
     td{width: 30%; padding: 10px; margin: auto; text-align: center}
-    .selectedspeaker{color:white; font-size: 2.8em}
-    .speakerheading{font-family: poppins; font-weight: 700; text-align: center; transition: 0.3s; font-size: 2.5em; color: rgba(255,255,255,0.5); padding: 20px 0; }
     #speakers{margin-top: 250px; padding: 0 6vw; padding-right: 3vw; position: relative;}
     .speakerpic{display: inline-block; width: 60%; float: right}
     .speakerpic .speakerwrapper{overflow: hidden; height: 65vh; position: relative;}
@@ -125,8 +133,6 @@ table:nth-child(1) th{padding-top: 0;}
     #gallery h1{margin-bottom: 30px }
     #partners h1{padding:150px 5vw 20px 5vw; font-family: poppins; font-weight: 700; color: #000; font-size: 2.5em}
     #partners img{width: auto; height: 15vh; transition: 0.4s;}
-
-
 }
 
 
@@ -144,13 +150,13 @@ table:nth-child(1) th{padding-top: 0;}
     .updates .new{margin-right: 10px}
     .updates .update{color:rgb(96,109,255); margin-left: 0px}
     .About{color: white; padding: 10px; width: 95vw; margin: auto; font-size: 16px; font-family: montserrat; line-height: 22px; margin-top: 50px}
-    .About h1{margin-bottom: 30px; font-family: quicksand}
+    .About h1{margin-bottom: 30px; font-family: questrial}
     .About p{color: rgba(255,255,255,0.8); font-size: 1.1em}
-    .fixedheaderphone{font-size: 25px; text-align: center; color: #FFF; margin-bottom: 10px}
-    .headingsphone{height: 45vh; background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYJLCzHPH4xDFZQB9iXY8rxZShd1THCDjFSUFq8g1EFiU_JOrQQ'); background-size: cover; background-repeat: no-repeat; background-position: center}
-    .landingwrapperphone{background: rgba(0,0,0,0.2); height: 100%; display: flex; justify-content: center; align-items: center;}
-    .eventheading{font-family: poppins; padding: 0px 20px; margin-top: 50px; color: #FFF; font-size: 2em}
-    .eventswrapper{height: 60vh; font-family: montserrat; color: #FFF; width: 95vw; padding: 0 4vw; margin: auto; overflow-y: scroll}
+    .fixedheaderphone{font-size: 30px; text-align: center; color: #FFF; margin-bottom: 10px}
+    .headingsphone{height: 45vh; background: url('../images/vid-background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center}
+    .landingwrapperphone{background: rgba(0,0,0,0.4); height: 100%; display: flex; justify-content: center; align-items: center;}
+    .eventheading{font-family: poppins; padding: 0px 20px; margin-top: 80px; color: #FFF; font-size: 2em}
+    .eventswrapper{/*height: 60vh;*/ font-family: montserrat; color: #FFF; width: 95vw; padding: 0 4vw; margin: auto; overflow-y: scroll}
     td{width: 30%; padding: 20px 0px; margin: auto; text-align: center}
     .eventswrapper{padding: 0;}
     .speakerheading{font-family: poppins; font-weight: 700; transition: 0.3s; text-align: center; font-size: 2.5em; color: rgba(255,255,255,0.5); padding: 20px 0; }
@@ -164,7 +170,6 @@ table:nth-child(1) th{padding-top: 0;}
     #partners h1{padding:150px 5vw 20px 5vw; font-family: poppins; font-weight: 700; color: #000; font-size: 3em; text-align: center}
     #partners img{width: 80%; height: auto; transition: 0.4s;}
     iframe{width:100%;}
-
 }
 
 
