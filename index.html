@@ -603,9 +603,9 @@
 						<div class="col-4"><a href="https://twitter.com/sfdpu" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
 						<div class="col-4"><a href="https://instagram.com/sfdpu" target="_blank"><i class="fab fa-instagram"></i></a></div>
 					</div>
-					<p><i class="fas fa-phone-square"></i>+91-9923602126</p>
-					<p><i class="fas fa-phone-square"></i>+91-9923602126</p>
-					<p><i class="fas fa-envelope-square"></i>sfdchd.help@gmail.com</p>
+					<p><i class="fas fa-phone-square"></i>+91 70810 16235</p>
+					<p><i class="fas fa-phone-square"></i>+91 90566 08712</p>
+					<p><i class="fas fa-envelope-square"></i>sfdpulug@gmail.com</p>
 					<p><i class="fas fa-map-marker-alt"></i>P.L. Anand Auditorium, Panjab University, Sector 14, Chandigarh, 160014</p>
 				</div>
 			</div>
@@ -629,16 +629,17 @@
 		var checkpointthree = x.top + $('.speakers .col-6:nth-child(6)').height()/2;
 		var checkpointfour = z.top+zz;	
 		$(window).scroll(function(){
-			if($(window).scrollTop()>=w.top-ww){
+			if($(window).scrollTop()>=w.top-v){
 				var a = $('.fixedheaders').offset().top;
 				$('.fixedheaders').addClass('Highlight');
-				console.log(a);
-				console.log();
-				// $('.Highlight').css('top', a + 'px');
+				$('.Highlight').css('top', v + 'px');
 				$('.headers').removeClass("selected");
 				$('.headers:nth-child(1)').addClass('selected');
 			}else{
 				$('.fixedheaders').removeClass('Highlight');
+				$('.headers').removeClass("selected");
+
+
 			}
 			if($(window).scrollTop()>checkpointone && $(window).scrollTop()<checkpointtwo){
 				$('.fixedheader').removeClass('shift2');
@@ -695,11 +696,11 @@
 					slidesToShow: 2,
 					responsive: [
 					{
-					  breakpoint: 768,
+					  breakpoint: 991,
 					  settings: {
 					    arrows: false,
 					    centerMode: true,
-					    centerPadding: '40px',
+					    centerPadding: '20px',
 					    slidesToShow: 1
 					  }
 					},
@@ -708,7 +709,7 @@
 					  settings: {
 					    arrows: false,
 					    centerMode: true,
-					    centerPadding: '40px',
+					    centerPadding: '20px',
 					    slidesToShow: 1
 					  }
 					}
@@ -724,8 +725,8 @@
 					  settings: {
 					    arrows: false,
 					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
+					    centerPadding: '20px',
+					    slidesToShow: 3
 					  }
 					},
 					{
